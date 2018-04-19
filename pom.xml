@@ -42,5 +42,6 @@
 
 	<modules>
 		<module>state-machine</module>
+		<module>proxy</module>
 	</modules>
 </project>
