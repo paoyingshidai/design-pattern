@@ -45,5 +45,6 @@
 		<module>proxy</module>
 		<module>responsibility-chain</module>
 		<module>filter</module>
+		<module>decorator</module>
 	</modules>
 </project>
