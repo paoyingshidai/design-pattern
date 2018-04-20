@@ -47,5 +47,6 @@
 		<module>filter</module>
 		<module>decorator</module>
 		<module>Strategy</module>
+		<module>observer</module>
 	</modules>
 </project>
