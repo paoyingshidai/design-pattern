@@ -48,5 +48,6 @@
 		<module>decorator</module>
 		<module>Strategy</module>
 		<module>observer</module>
+		<module>template</module>
 	</modules>
 </project>
