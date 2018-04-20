@@ -46,5 +46,6 @@
 		<module>responsibility-chain</module>
 		<module>filter</module>
 		<module>decorator</module>
+		<module>Strategy</module>
 	</modules>
 </project>
