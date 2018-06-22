@@ -49,5 +49,6 @@
 		<module>Strategy</module>
 		<module>observer</module>
 		<module>template</module>
+		<module>memento</module>
 	</modules>
 </project>
