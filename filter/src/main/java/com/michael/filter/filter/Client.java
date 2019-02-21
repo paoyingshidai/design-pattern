@@ -9,6 +9,8 @@ public class Client {
 	}
 
 	public void sendRequest(String request) {
+		// 如果没有代理, 将会执行 Target.execute();
+
 		filterManager.filterRequest(request);
 	}
 }

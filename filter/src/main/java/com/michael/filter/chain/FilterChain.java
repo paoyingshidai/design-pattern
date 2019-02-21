@@ -1,11 +1,14 @@
 package com.michael.filter.chain;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 执行 filter 与 目标方法 target 的地方
+ */
 public class FilterChain {
 	
-	private List<Filter> filters = new ArrayList<Filter>();
+	private List<Filter> filters = new LinkedList<>();
 	private int currentPosition = 0;
 	private int size = 0;
 	

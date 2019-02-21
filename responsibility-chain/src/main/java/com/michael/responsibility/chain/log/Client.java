@@ -18,13 +18,17 @@ public class Client {
 	      AbstractLogger loggerChain = getChainOfLoggers();
 
 	      loggerChain.logMessage(AbstractLogger.INFO, 
-	         "This is an information.");
+	         "This is an INFO level information.");
+
+		   System.out.println();
 
 	      loggerChain.logMessage(AbstractLogger.DEBUG, 
-	         "This is an debug level information.");
+	         "This is an DEBUG level information.");
+
+		   System.out.println();
 
 	      loggerChain.logMessage(AbstractLogger.ERROR, 
-	         "This is an error information.");
+	         "This is an ERROR level information.");
 	   }
 	   
 }

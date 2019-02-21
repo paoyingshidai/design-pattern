@@ -9,10 +9,10 @@ public class YellowShapeDecorator extends ShapeDecorator {
 	@Override
 	public void draw() {
 		decoratedShape.draw();
-		setRedBorder(decoratedShape);
+		setYellowBorder(decoratedShape);
 	}
 
-	private void setRedBorder(Shape decoratedShape) {
+	private void setYellowBorder(Shape decoratedShape) {
 		System.out.println("Border Color: Yellow");
 	}
 	

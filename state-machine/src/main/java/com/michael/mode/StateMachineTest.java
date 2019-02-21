@@ -10,7 +10,7 @@ public class StateMachineTest {
          Machine machine=new Machine(10);  
          
          for(int i = 0; i < 11; i++){  
-	         System.out.println(machine);
+	         System.out.println();
 	         
 	         machine.insertQuerter();
 	         

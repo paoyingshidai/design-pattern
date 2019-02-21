@@ -1,8 +1,12 @@
 package com.michael.filter.chain;
 
+/**
+ * FilterChain 的门面类，用于处理 FilterChain 与外部类的数据交互
+ * 包括 设置 filter 和 目标类
+ */
 public class FilterManager {
 
-	FilterChain filterChain;
+	final FilterChain filterChain;
 
 	public FilterManager(Target target) {
 		filterChain = new FilterChain();

@@ -3,12 +3,15 @@ package com.michael.proxy.dynamic;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
+/**
+ * 该类相当于代理类
+ */
 public class DynamicProxy implements InvocationHandler
 {
-    //　这个就是我们要代理的真实对象
+    //　这个就是我们要代理的真实对象， 这个对象没有指定具体的接口，因此该代理类适用性更广泛
     private Object subject;
     
-    //    构造方法，给我们要代理的真实对象赋初值
+    //  构造方法，给我们要代理的真实对象赋初值
     public DynamicProxy(Object subject)
     {
         this.subject = subject;
