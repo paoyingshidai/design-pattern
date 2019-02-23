@@ -50,5 +50,6 @@
 		<module>observer</module>
 		<module>template</module>
 		<module>memento</module>
-	</modules>
+        <module>singleton</module>
+    </modules>
 </project>
