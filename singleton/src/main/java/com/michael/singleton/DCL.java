@@ -1,6 +1,5 @@
 package com.michael.singleton;
 
-import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -9,12 +8,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class DCL {
 
-    //使用volatile关键字保其可见性
+    // 使用volatile关键字保其可见性
     volatile private static DCL instance = null;
 
     private DCL(){}
 
-    //懒汉式, 相比于锁住整个方法，这个模式效率更高
+    // 懒汉式, 相比于锁住整个方法，这个模式效率更高
     public static DCL getInstance() {
         long before = System.currentTimeMillis();
 
@@ -22,10 +21,10 @@ public class DCL {
             if(instance != null) {
                 TimeUnit.SECONDS.sleep(1);
             } else {
-                //创建实例之前可能会有一些准备性的耗时工作
+                // 创建实例之前可能会有一些准备性的耗时工作
                 TimeUnit.SECONDS.sleep(1);
                 synchronized (DCL.class) {
-                    //二次检查
+                    // 二次检查
                     if(instance == null){
                         instance = new DCL();
                     }
@@ -35,7 +34,7 @@ public class DCL {
             e.printStackTrace();
         }
 
-        System.out.println(System.currentTimeMillis() - before);
+//        System.out.println(System.currentTimeMillis() - before);
 
         return instance;
     }

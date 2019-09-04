@@ -5,6 +5,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ *
+ * // TODO 另外还有通过 cas 生成，静态内部类，枚举等方式生成单例
  *  在高并发的场景下如何保证获取到的是同一个对象
  */
 public class Main {
@@ -75,8 +77,8 @@ public class Main {
         ExecutorService executorService = Executors.newFixedThreadPool(1000);
         for (int i = 0; i < 1000; i++) {
             executorService.execute(() -> {
-                DCL.getInstance();
-//                System.out.println(DCL.getInstance().toString());
+                DCL dcl = DCL.getInstance();
+                System.out.println(dcl.toString());
             });
         }
         executorService.shutdown();
