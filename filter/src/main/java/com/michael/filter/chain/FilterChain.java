@@ -20,7 +20,7 @@ public class FilterChain {
 	}
 
 	public void execute(String request) {
-		
+		// filter 已经执行完就执行 target.
 		if (currentPosition == size) {
 			target.execute(request);	
 		} else {

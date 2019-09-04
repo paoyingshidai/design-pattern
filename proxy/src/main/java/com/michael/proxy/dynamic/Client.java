@@ -8,7 +8,10 @@ import java.lang.reflect.Proxy;
  * 
  * 1、动态代理类不需要逐个实现 被代理的接口方法，而是可以统一实现，
  * 2、静态代理可以更细粒度的实现接口的方法
- * 
+ *
+ * InvocationHandler 与 需要代理的接口在声明功能时可以没有关联的，
+ * 在 clien 方调用的时候在进行 Proxy.newProxyInstance 关联。
+ *
  * @author Michael
  *
  */
