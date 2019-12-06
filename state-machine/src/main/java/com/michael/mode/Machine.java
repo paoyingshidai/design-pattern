@@ -15,8 +15,11 @@ public class Machine {
     private State hasQuarterState;  
     private State soldState;  
   
-    private State state; //机器的当前状态  
-    private int count = 0;//机器中当前糖果的数量  
+    private State state;    // 机器的当前状态
+
+
+    // 这里可以存放整个过程中所涉及到的数据，在状态变更的时候就可以对这些数据进行修改
+    private int count = 0;  // 机器中当前糖果的数量
     /** 
      * 初始化机器，引入所有的状态机，初始化糖果数量，初始化机器状态 
      * @param count 

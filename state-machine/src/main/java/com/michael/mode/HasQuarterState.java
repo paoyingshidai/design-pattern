@@ -8,13 +8,15 @@ package com.michael.mode;
  * @author seacean 
  * @date 2013-8-29 
  */  
-public class HasQuarterState implements State {  
+public class HasQuarterState implements State {
+
     private Machine machine;  
       
     public HasQuarterState(Machine machine){  
         this.machine=machine;  
     }  
-    @Override  
+
+    @Override
     public void insertQuarter() {  
         System.out.println("You can not insert another quarter!");  
     }  

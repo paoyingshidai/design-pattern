@@ -9,7 +9,8 @@ package com.michael.mode;
  * @author seacean 
  * @date 2013-8-29 
  */  
-public class SoldState implements State {  
+public class SoldState implements State {
+
     private Machine machine;  
   
     public SoldState(Machine machine) {  

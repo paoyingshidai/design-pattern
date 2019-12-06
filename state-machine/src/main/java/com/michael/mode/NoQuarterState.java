@@ -7,7 +7,8 @@ package com.michael.mode;
  * @author Michael
  *
  */
-public class NoQuarterState implements State {  
+public class NoQuarterState implements State {
+
     private Machine machine;  
   
     public NoQuarterState(Machine machine) {  
