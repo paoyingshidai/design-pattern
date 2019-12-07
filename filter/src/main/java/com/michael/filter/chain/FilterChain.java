@@ -14,7 +14,7 @@ public class FilterChain {
 	
 	private Target target;
 
-	public void addFilter(Filter filter) {
+	public synchronized void addFilter(Filter filter) {
 		filters.add(filter);
 		this.size++;
 	}
