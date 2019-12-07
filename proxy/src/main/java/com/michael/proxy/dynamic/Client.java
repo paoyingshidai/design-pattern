@@ -5,20 +5,17 @@ import java.lang.reflect.Proxy;
 
 /**
  * 动态代理类与静态代理类的区别是：
- * 
+ * <p>
  * 1、动态代理类不需要逐个实现 被代理的接口方法，而是可以统一实现，
  * 2、静态代理可以更细粒度的实现接口的方法
- *
+ * <p>
  * InvocationHandler 与 需要代理的接口在声明功能时可以没有关联的，
  * 在 clien 方调用的时候在进行 Proxy.newProxyInstance 关联。
  *
  * @author Michael
- *
  */
-public class Client
-{
-    public static void main(String[] args)
-    {
+public class Client {
+    public static void main(String[] args) {
         //    我们要代理的真实对象
         Subject realSubject = new RealSubject();
 
@@ -32,9 +29,9 @@ public class Client
          *           表示我要代理的是该真实对象，这样我就能调用这组接口中的方法了
          * 第三个参数handler， 我们这里将这个代理对象关联到了上方的 InvocationHandler 这个对象上
          */
-        Subject subject = (Subject)Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject
+        Subject subject = (Subject) Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject
                 .getClass().getInterfaces(), handler);
-        
+
         System.out.println(subject.getClass().getName());
         System.out.println();
         subject.rent();
