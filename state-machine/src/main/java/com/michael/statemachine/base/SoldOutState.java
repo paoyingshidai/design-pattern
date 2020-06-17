@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.michael.mode;
+package com.michael.statemachine.base;
 
 /** 
  * 机器处于无糖果状态 

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.michael.mode;
+package com.michael.statemachine.base;
 
 /** 
  * 机器处于有硬币，有糖果，没有摇动的状态 

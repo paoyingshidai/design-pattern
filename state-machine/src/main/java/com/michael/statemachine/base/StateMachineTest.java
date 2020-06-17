@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.michael.mode;
+package com.michael.statemachine.base;
 
 public class StateMachineTest {  
 	

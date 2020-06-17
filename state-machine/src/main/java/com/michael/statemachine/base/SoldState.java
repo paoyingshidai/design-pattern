@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.michael.mode;
+package com.michael.statemachine.base;
 
 /** 
  * 机器正在出售糖果的状态 
